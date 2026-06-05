@@ -1,0 +1,22 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE folders
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Dependency/build output, in case the static site gains tooling later
+node_modules/
+dist/
+build/
+.cache/
+.codex-tools/

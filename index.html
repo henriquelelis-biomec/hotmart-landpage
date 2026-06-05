@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Biomecânica do Desempenho Esportivo — Tecnologia aplicada ao alto rendimento com Dr. Henrique Lelis, biomecânico do Comitê Olímpico Brasileiro. Aprenda a otimizar treinos, prevenir lesões e maximizar resultados." />
+  <meta name="theme-color" content="#050D1A" />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Biomecânica do Desempenho Esportivo — Dr. Henrique Lelis" />
+  <meta property="og:description" content="Implemente monitoramento, análise de dados e protocolos para otimizar treinos, prevenir lesões e maximizar resultados esportivos." />
+  <meta property="og:image"       content="assets/course-cover.png" />
+
+  <title>Biomecânica do Desempenho Esportivo — Dr. Henrique Lelis</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts: Montserrat (headings) + Inter (body) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       STICKY HEADER
+       ============================================================ -->
+  <header id="header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#hero" class="header-logo" aria-label="Topo da página">
+          <span class="header-logo-accent">Biomecânica</span>&nbsp;Esportiva
+        </a>
+        <nav class="header-cta" aria-label="Ação principal">
+          <a
+            href="#"
+            class="btn btn-primary"
+            data-cta="header"
+            aria-label="Comprar o curso agora"
+          >
+            <span>Comprar Agora</span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section id="hero" aria-label="Apresentação do curso">
+      <!-- Particle canvas (behind everything) -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Atmospheric glow overlays -->
+      <div class="hero-glow hero-glow-gold" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-blue"  aria-hidden="true"></div>
+
+      <div class="hero-inner">
+
+        <!-- LEFT: Text content -->
+        <div class="hero-content">
+          <!-- Badges -->
+          <div class="hero-badges">
+            <span class="badge badge-gold">Aula Introdutória</span>
+            <span class="badge badge-blue">Ciência &amp; Tecnologia</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="hero-headline">
+            <span class="hero-headline-accent">BIOMECÂNICA</span>
+            <span class="hero-headline-sub">do Desempenho Esportivo</span>
+          </h1>
+
+          <!-- Tagline -->
+          <p class="hero-tagline">
+            Implemente monitoramento, análise de dados e protocolos científicos
+            para <strong>otimizar treinos, prevenir lesões</strong> e maximizar
+            o rendimento esportivo.
+          </p>
+
+          <!-- Trust signals -->
+          <ul class="hero-trust" aria-label="Credenciais do instrutor">
+            <li class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>+12 anos de experiência</span>
+            </li>
+            <li class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2H6v7a6 6 0 0012 0V2z"/><path d="M6 9H4.5a2.5 2.5 0 010-5H6M18 9h1.5a2.5 2.5 0 000-5H18"/><path d="M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/></svg>
+              <span>Biomecânico do COB</span>
+            </li>
+            <li class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <span>PhD Eng. Biomédica</span>
+            </li>
+          </ul>
+
+          <!-- CTA group -->
+          <div class="hero-cta-group">
+            <a
+              href="#"
+              class="btn btn-primary btn-lg btn-pulse"
+              data-cta="hero"
+              aria-label="Comprar o curso Biomecânica do Desempenho Esportivo"
+            >
+              <span>COMPRAR AGORA — R$&nbsp;199,99</span>
+            </a>
+            <div class="hero-urgency" aria-live="polite">
+              <span class="urgency-dot" aria-hidden="true"></span>
+              <span>Oferta por tempo limitado &middot; Garantia de 7 dias</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Course cover image -->
+        <div class="hero-visual">
+          <div class="hero-img-container">
+            <div class="hero-img-halo" aria-hidden="true"></div>
+
+            <!-- Course cover (fallback to CSS block if missing) -->
+            <img
+              src="assets/course-cover.png"
+              alt="Capa do curso Biomecânica do Desempenho Esportivo com Dr. Henrique Lelis"
+              class="hero-cover-img"
+              loading="eager"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <div class="hero-cover-fallback" aria-hidden="true">
+              <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="rgba(201,162,39,0.35)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M15.09 8.26L12 10l-3.09-1.74A2 2 0 007 10v4M12 10v5M7 14l2 7M17 14l-2 7"/></svg>
+              <span class="hero-cover-fallback-title">BIOMECÂNICA<br/>DO DESEMPENHO<br/>ESPORTIVO</span>
+            </div>
+
+            <!-- Author badge -->
+            <div class="hero-author-badge" aria-label="Instrutor">
+              <div class="badge-avatar" aria-hidden="true">HL</div>
+              <div class="badge-info">
+                <span class="badge-name">Dr. Henrique Lelis</span>
+                <span class="badge-role">Fisioterapeuta · Biomecânico COB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PAIN → SOLUTION SECTION
+         ============================================================ -->
+    <section id="pain" class="section-py" aria-labelledby="pain-heading">
+      <div class="container">
+        <div class="pain-header text-center" data-reveal>
+          <p class="section-label">O problema</p>
+          <h2 id="pain-heading" class="pain-headline">
+            Você ainda analisa atletas<br />
+            <span>apenas no olho clínico?</span>
+          </h2>
+          <p class="pain-sub">
+            O mercado esportivo evoluiu. Profissionais que não incorporam dados
+            e tecnologia à sua prática ficam para trás — e seus atletas pagam
+            o preço com desempenho abaixo do potencial e lesões evitáveis.
+          </p>
+        </div>
+
+        <div id="pain-grid" class="pain-grid" data-reveal aria-label="Problemas e soluções">
+          <!-- Populated by JS from CONFIG.painPoints -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MODULES / WHAT YOU'LL LEARN
+         ============================================================ -->
+    <section id="modules" class="section-py" aria-labelledby="modules-heading">
+      <div class="container">
+        <div class="modules-header text-center" data-reveal>
+          <p class="section-label">Conteúdo do curso</p>
+          <h2 id="modules-heading" class="section-title">
+            O que você vai <span>aprender</span>
+          </h2>
+          <p class="section-description">
+            Conteúdo prático e aplicável — da teoria científica aos protocolos
+            que você implementa na semana seguinte.
+          </p>
+        </div>
+
+        <div id="modules-grid" class="modules-grid" data-reveal aria-label="Módulos do curso">
+          <!-- Populated by JS from CONFIG.modules -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         AUDIENCE — FOR WHOM
+         ============================================================ -->
+    <section id="audience" class="section-py" aria-labelledby="audience-heading">
+      <div class="container">
+        <div class="audience-header text-center" data-reveal>
+          <p class="section-label">Para quem é</p>
+          <h2 id="audience-heading" class="section-title">
+            Este conteúdo foi feito <span>para você</span>
+          </h2>
+          <p class="section-description">
+            Seja você um profissional de saúde, de esporte ou atleta — a
+            biomecânica vai transformar a forma como você trabalha.
+          </p>
+        </div>
+
+        <div id="audience-grid" class="audience-grid" data-reveal aria-label="Público-alvo do curso">
+          <!-- Populated by JS from CONFIG.audience -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         STATS / SOCIAL PROOF BAR
+         ============================================================ -->
+    <section id="stats" aria-label="Credenciais e números">
+      <div class="container">
+        <div id="stats-grid" class="stats-grid">
+          <!-- Populated by JS from CONFIG.stats — counters animate on scroll -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MID-PAGE CTA BANNER
+         ============================================================ -->
+    <section id="cta-mid" aria-label="Chamada para ação">
+      <div class="container">
+        <div class="cta-mid-inner" data-reveal>
+          <div class="cta-mid-text">
+            <h2 class="cta-mid-title">
+              Transforme sua prática com <span>biomecânica de verdade</span>
+            </h2>
+            <p class="cta-mid-desc">
+              Acesso vitalício · Garantia de 7 dias · Certificado digital
+            </p>
+          </div>
+          <a
+            href="#"
+            class="btn btn-primary btn-lg"
+            data-cta="cta_mid"
+            aria-label="Adquirir o curso agora"
+          >
+            <span>QUERO COMEÇAR AGORA</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         AUTHOR SECTION
+         ============================================================ -->
+    <section id="author" class="section-py" aria-labelledby="author-heading">
+      <div class="container">
+        <div class="author-grid" data-reveal>
+
+          <!-- Photo -->
+          <div class="author-img-wrapper">
+            <div class="author-img-frame">
+              <img
+                src="assets/author.jpg"
+                alt="Foto de Dr. Henrique Lelis — Fisioterapeuta e Biomecânico do COB"
+                class="author-photo"
+                loading="lazy"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+              />
+              <div class="author-initials" aria-hidden="true">HL</div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="author-content">
+            <div class="author-name-block">
+              <p class="section-label">Seu instrutor</p>
+              <h2 id="author-heading" class="author-name">
+                Dr.&nbsp;<span>Henrique</span>&nbsp;Lelis
+              </h2>
+              <p class="author-role">Fisioterapeuta · Doutor em Engenharia Biomédica</p>
+            </div>
+
+            <div class="author-separator" aria-hidden="true"></div>
+
+            <p class="author-bio">
+              Formado em fisioterapia pela UFJF com mais de 12 anos de experiência
+              na área esportiva e traumato-ortopédica. Doutor em engenharia biomédica
+              com ênfase em biomecânica clínica e esportiva. Atua como biomecânico
+              do Comitê Olímpico do Brasil e é professor de cursos de pós-graduação.
+            </p>
+
+            <ul id="author-credentials" class="credentials-list" aria-label="Credenciais do Dr. Henrique Lelis">
+              <!-- Populated by JS from CONFIG.author.credentials -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OFFER + GUARANTEE + PRICING SECTION
+         ============================================================ -->
+    <section id="offer" class="section-py" aria-labelledby="offer-heading">
+      <div class="container">
+        <div class="text-center" data-reveal style="margin-bottom: var(--sp-10)">
+          <p class="section-label">Investimento</p>
+          <h2 id="offer-heading" class="section-title">
+            Comece agora com <span>risco zero</span>
+          </h2>
+          <p class="section-description">
+            Acesso imediato após a confirmação do pagamento.
+            Garantia incondicional e pagamento 100% seguro via Hotmart.
+          </p>
+        </div>
+
+        <div class="offer-card" data-reveal>
+          <!-- Gold top bar via ::before pseudo -->
+
+          <!-- Guarantee -->
+          <div class="guarantee-block">
+            <svg
+              class="guarantee-shield"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-label="Ícone de garantia"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+            <p id="guarantee-title" class="guarantee-title">
+              Garantia Incondicional de 7 Dias
+            </p>
+            <p id="guarantee-desc" class="guarantee-desc">
+              Seu dinheiro de volta sem perguntas até 7 dias após a compra.
+              Sem burocracia, sem risco.
+            </p>
+          </div>
+
+          <div class="offer-divider" aria-hidden="true"></div>
+
+          <!-- Pricing -->
+          <div class="offer-price-block">
+            <p class="offer-label">por apenas</p>
+            <p id="offer-price" class="offer-price">R$&nbsp;199,99</p>
+            <p id="offer-installments" class="offer-installments">
+              ou parcelado em até 12x sem juros
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="offer-cta-wrapper">
+            <a
+              href="#"
+              class="btn btn-primary btn-xl btn-pulse"
+              data-cta="offer"
+              aria-label="Garantir minha vaga no curso agora"
+            >
+              <span>GARANTIR MINHA VAGA AGORA</span>
+            </a>
+
+            <!-- Security badges -->
+            <ul class="offer-security" aria-label="Selos de segurança">
+              <li class="security-item">
+                <svg class="security-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Pagamento Seguro</span>
+              </li>
+              <li class="security-item">
+                <svg class="security-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Acesso Imediato</span>
+              </li>
+              <li class="security-item">
+                <svg class="security-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Certificado Digital</span>
+              </li>
+              <li class="security-item">
+                <svg class="security-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Acesso Vitalício</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ SECTION
+         ============================================================ -->
+    <section id="faq" class="section-py" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="faq-header text-center" data-reveal>
+          <p class="section-label">Dúvidas</p>
+          <h2 id="faq-heading" class="section-title">
+            Perguntas <span>frequentes</span>
+          </h2>
+        </div>
+
+        <div id="faq-list" data-reveal aria-label="Perguntas frequentes sobre o curso">
+          <!-- Populated by JS from CONFIG.faq -->
+        </div>
+
+        <!-- Bottom CTA after FAQ -->
+        <div class="text-center" style="margin-top: var(--sp-16)" data-reveal>
+          <p class="section-description" style="margin-bottom: var(--sp-6)">
+            Ainda tem dúvidas? Compre agora com <strong style="color:var(--clr-gold)">garantia incondicional de 7 dias</strong> — se não gostar, devolvemos 100% do seu dinheiro.
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary btn-lg"
+            data-cta="faq_bottom"
+            aria-label="Comprar o curso com garantia"
+          >
+            <span>COMPRAR COM GARANTIA DE 7 DIAS</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span>Biomecânica</span>&nbsp;do Desempenho Esportivo
+        </div>
+
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="https://www.hotmart.com/terms" target="_blank" rel="noopener noreferrer">Termos de Uso</a>
+          <a href="https://www.hotmart.com/privacy" target="_blank" rel="noopener noreferrer">Privacidade</a>
+          <a href="https://www.hotmart.com" target="_blank" rel="noopener noreferrer">Hotmart</a>
+        </nav>
+
+        <p class="footer-copy">
+          &copy; 2026 Dr. Henrique Lelis &middot; Todos os direitos reservados
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING MOBILE CTA
+       ============================================================ -->
+  <div id="floating-cta" role="complementary" aria-label="Compra rápida">
+    <a
+      href="#"
+      class="floating-btn"
+      data-cta="floating"
+      aria-label="Comprar o curso agora por R$ 199,99"
+    >
+      COMPRAR AGORA — R$&nbsp;199,99
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
