@@ -38,7 +38,8 @@ const CONFIG = {
     installments: '12x de R$ 16,67',
     installmentsText: 'ou parcelado em até 12x sem juros',
     checkoutUrl:
-      'https://henrique-lelis1.hotmart.host/biomecanica-do-desempenho-esportivo-b57688ff-d60b-4535-b544-3de84504d57d',
+      'https://pay.hotmart.com/W106099703H?off=2m73zvfp&hotfeature=51&_hi=eyJjaWQiOiIxNzgwNjkzOTU4NzcwMjk2MzYyODIxNzM1NTQ2NjAwIiwiYmlkIjoiMTc4MDY5Mzk1ODc3MDI5NjM2MjgyMTczNTU0NjYwMCIsInNpZCI6IjJkYjljOWQ3YTkzYjQ2YzU4NTVkMWRhZDUzMDUyOTJhIn0=.1781447211990&bid=1781447213683',
+    appendCtaSource: false,
     ctaLabel: 'GARANTIR MINHA VAGA AGORA',
     ctaLabelShort: 'COMPRAR AGORA',
     urgency: 'Oferta por tempo limitado · Garantia de 7 dias',
@@ -231,10 +232,20 @@ class Renderer {
   _renderCTALinks() {
     document.querySelectorAll('[data-cta]').forEach((el) => {
       const src = el.dataset.cta;
-      el.href = `${this.cfg.offer.checkoutUrl}?src=lp_${src}`;
+      el.href = this._buildCheckoutUrl(src);
       el.setAttribute('target', '_blank');
       el.setAttribute('rel', 'noopener noreferrer');
     });
+  }
+
+  _buildCheckoutUrl(src) {
+    if (!this.cfg.offer.appendCtaSource) {
+      return this.cfg.offer.checkoutUrl;
+    }
+
+    const url = new URL(this.cfg.offer.checkoutUrl);
+    url.searchParams.set('src', `lp_${src}`);
+    return url.toString();
   }
 
   _renderPainPoints() {
