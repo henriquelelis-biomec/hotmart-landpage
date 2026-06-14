@@ -615,53 +615,6 @@ svg   { display: block; }
   line-height: 1.2;
 }
 
-/* Author badge floating on image */
-.hero-author-badge {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: var(--sp-3);
-  background: rgba(9,20,40,0.96);
-  border: 1px solid var(--clr-gold-border);
-  border-radius: var(--r-full);
-  padding: var(--sp-2) var(--sp-5) var(--sp-2) var(--sp-2);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: var(--sh-card), 0 0 30px rgba(201,162,39,0.15);
-  white-space: nowrap;
-}
-
-.badge-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--clr-gold), var(--clr-gold-lt));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--ff-head);
-  font-size: var(--fs-sm);
-  font-weight: 900;
-  color: #060F1E;
-  flex-shrink: 0;
-}
-
-.badge-info { display: flex; flex-direction: column; }
-
-.badge-name {
-  font-family: var(--ff-head);
-  font-size: var(--fs-sm);
-  font-weight: 700;
-}
-
-.badge-role {
-  font-size: var(--fs-xs);
-  color: var(--clr-txt-muted);
-}
-
 @keyframes float {
   0%,100% { transform: translateY(0); }
   50%     { transform: translateY(-11px); }
