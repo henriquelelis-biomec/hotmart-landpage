@@ -53,7 +53,7 @@ const CONFIG = {
 
   stats: [
     { value: 12,   suffix: '+',  label: 'Anos de Experiência' },
-    { value: 1,    suffix: '',   label: 'Comitê Olímpico Brasileiro' },
+    { value: 1000, suffix: '+',  label: 'atletas atendidos' },
     { value: 5000, suffix: '+',  label: 'Profissionais Impactados' },
     { value: 100,  suffix: '%',  label: 'Conteúdo Aplicável' },
   ],
