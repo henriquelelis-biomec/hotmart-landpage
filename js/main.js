@@ -21,7 +21,7 @@ const CONFIG = {
     name: 'Dr. Henrique Lelis',
     shortName: 'Henrique Lelis',
     role: 'Fisioterapeuta · Doutor em Engenharia Biomédica',
-    photo: 'assets/author.jpg',
+    photo: 'assets/author.png',
     initials: 'HL',
     bio: 'Formado em fisioterapia pela UFJF com mais de 12 anos de experiência na área esportiva e traumato-ortopédica. Doutor em engenharia biomédica com ênfase em biomecânica clínica e esportiva. Atua como biomecânico do Comitê Olímpico do Brasil e é professor de cursos de pós-graduação.',
     credentials: [
