@@ -1347,6 +1347,238 @@ footer {
 /* ============================================================
    21. RESPONSIVE OVERRIDES
    ============================================================ */
+.alt-showcase {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(201,162,39,0.12), transparent 32%),
+    linear-gradient(180deg, var(--clr-bg-dark), var(--clr-bg));
+}
+
+.alt-band {
+  background: var(--clr-bg-2);
+}
+
+.alt-section-grid {
+  display: grid;
+  gap: var(--sp-10);
+  align-items: center;
+}
+
+.alt-section-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-5);
+}
+
+.alt-section-copy .section-description {
+  text-align: left;
+  margin-left: 0;
+}
+
+.video-preview {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--clr-gold-border);
+  border-radius: var(--r-lg);
+  background:
+    linear-gradient(rgba(5,13,26,0.18), rgba(5,13,26,0.84)),
+    url('../assets/course-cover.png?v=20260614-flyer') center / cover;
+  box-shadow: var(--sh-card), 0 0 44px rgba(201,162,39,0.16);
+}
+
+.video-preview-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  padding: var(--sp-8);
+  text-align: center;
+}
+
+.video-play {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--clr-gold), var(--clr-gold-lt));
+  box-shadow: 0 0 30px rgba(201,162,39,0.35);
+  position: relative;
+}
+
+.video-play::after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 23px;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-left: 19px solid #06101F;
+}
+
+.video-kicker {
+  color: var(--clr-gold);
+  font-family: var(--ff-head);
+  font-size: var(--fs-sm);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.video-title {
+  color: var(--clr-txt);
+  font-family: var(--ff-head);
+  font-size: var(--fs-2xl);
+  font-weight: 900;
+}
+
+.video-note {
+  max-width: 420px;
+  color: var(--clr-txt-muted);
+  line-height: 1.6;
+}
+
+.content-preview-grid,
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-5);
+  margin-top: var(--sp-10);
+}
+
+.content-preview-card,
+.testimonial-card {
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-md);
+  background: rgba(9,20,40,0.72);
+  box-shadow: var(--sh-card);
+}
+
+.content-preview-card {
+  overflow: hidden;
+}
+
+.content-preview-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.content-preview-card div,
+.content-preview-placeholder {
+  padding: var(--sp-6);
+}
+
+.content-preview-card h3,
+.testimonial-card span {
+  font-family: var(--ff-head);
+}
+
+.content-preview-card h3 {
+  margin-bottom: var(--sp-2);
+  color: var(--clr-txt);
+  font-size: var(--fs-xl);
+}
+
+.content-preview-card p,
+.testimonial-card p {
+  color: var(--clr-txt-muted);
+  line-height: 1.65;
+}
+
+.content-preview-placeholder {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: var(--sp-3);
+  background:
+    linear-gradient(140deg, rgba(201,162,39,0.12), transparent 42%),
+    linear-gradient(180deg, rgba(13,32,60,0.94), rgba(5,13,26,0.94));
+}
+
+.content-preview-placeholder > span {
+  align-self: flex-start;
+  padding: var(--sp-2) var(--sp-3);
+  border: 1px solid var(--clr-gold-border);
+  border-radius: var(--r-full);
+  color: var(--clr-gold);
+  font-size: var(--fs-xs);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.testimonial-card {
+  padding: var(--sp-6);
+}
+
+.testimonial-card p {
+  margin-bottom: var(--sp-5);
+  color: var(--clr-txt);
+  font-size: var(--fs-lg);
+}
+
+.testimonial-card span {
+  color: var(--clr-gold);
+  font-size: var(--fs-sm);
+  font-weight: 800;
+}
+
+.athlete-proof {
+  min-height: 320px;
+  border: 1px solid var(--clr-gold-border);
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(circle at 50% 12%, rgba(201,162,39,0.18), transparent 34%),
+    linear-gradient(180deg, rgba(9,20,40,0.96), rgba(5,13,26,0.96));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-8);
+  text-align: center;
+  box-shadow: var(--sh-card);
+}
+
+.athlete-proof-number {
+  font-family: var(--ff-head);
+  font-size: clamp(4rem, 12vw, 7rem);
+  line-height: 1;
+  color: var(--clr-gold);
+  font-weight: 900;
+}
+
+.athlete-proof p {
+  margin-top: var(--sp-3);
+  color: var(--clr-txt);
+  font-family: var(--ff-head);
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+}
+
+.athlete-proof span {
+  margin-top: var(--sp-3);
+  max-width: 360px;
+  color: var(--clr-txt-muted);
+  line-height: 1.6;
+}
+
+.athlete-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-3);
+}
+
+.athlete-tags span {
+  padding: var(--sp-2) var(--sp-4);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-full);
+  color: var(--clr-txt-2);
+  background: rgba(255,255,255,0.04);
+  font-size: var(--fs-sm);
+}
+
 @media (max-width: 479px) {
   .hero-cta-group { align-items: stretch; }
   .btn-lg { font-size: var(--fs-base); padding: var(--sp-4) var(--sp-6); }
@@ -1359,11 +1591,15 @@ footer {
 
 @media (min-width: 768px) {
   .hero-cta-group { flex-direction: row; align-items: center; }
+  .content-preview-grid,
+  .testimonial-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (min-width: 1024px) {
   .modules-grid { grid-template-columns: repeat(3, 1fr); }
   .audience-grid { grid-template-columns: repeat(5, 1fr); }
+  .alt-section-grid { grid-template-columns: 0.9fr 1.1fr; }
+  .alt-section-grid-reverse { grid-template-columns: 1fr 1fr; }
 }
 
 /* ============================================================
